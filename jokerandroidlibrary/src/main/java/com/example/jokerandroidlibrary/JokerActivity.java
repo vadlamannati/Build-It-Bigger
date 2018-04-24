@@ -22,8 +22,8 @@ public class JokerActivity extends AppCompatActivity {
         Intent intent = getIntent();
         if (intent != null) {
             if (intent.hasExtra(Constants.JOKE)) {
-                //mainJokeView.setText(intent.getStringExtra(Constants.JOKE));
-                Toast.makeText(this, intent.getStringExtra(Constants.JOKE), Toast.LENGTH_LONG).show();
+                mainJokeView.setText(intent.getStringExtra(Constants.JOKE));
+                //Toast.makeText(this, intent.getStringExtra(Constants.JOKE), Toast.LENGTH_LONG).show();
 
                 /*MainActivityFragment mainActivityFragment = new MainActivityFragment();
                 Bundle bundle = new Bundle();
